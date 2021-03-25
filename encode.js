@@ -1,3 +1,7 @@
+const output = document.querySelector('#results')
+const radio = document.querySelectorAll('[name="translation-section"]')
+const inputBox = document.querySelector('#translator-input')
+
 const encode = function(sentence) {
     let result = '';
     for (const char of sentence) {
@@ -13,6 +17,6 @@ const encode = function(sentence) {
             result += char;
         }
     }
-
-    return result;
+    output.innerText=result
 }
+

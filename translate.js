@@ -1,3 +1,4 @@
+
 const translate = function(sentence) {
     return sentence.split(' ').map((word) => {
         for (const emoji of emojis) {
