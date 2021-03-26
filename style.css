@@ -1,3 +1,14 @@
 .radio-button {
     display: block;
 }
+
+.invisible{
+    display:none;
+}
+
+#explanation{
+    margin-top: 15px;
+    font-size: 8px;
+    color:grey;
+    border-color: white;
+}

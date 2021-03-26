@@ -5,10 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Emoji Translator</title>
         <link href="./emoji.png" rel="shortcut icon" type="image/jpg"/>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <input type="text" id="translator-input">
-        <button id="submit-button">Submit</button>
+        <div >
+            <button id="explanation">Show explanation</button>
+            <ul class="invisible">
+                <li>Encode changes each letter to an emoji</li>
+                <li>Translate interprets a word into emoji</li>
+                <li>Madlib randomly finds an emoji related to the word</li>
+                <li>Search shows all emojis listed under certain letter</li>
+                <li>Random randomly chooses one of the previous functions</li>
+            </ul>
+        </div>
         <form>
             <p>How would you like to translate?</p>
             <div class="radio-button-section">

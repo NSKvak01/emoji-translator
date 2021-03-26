@@ -1,8 +1,18 @@
-const submitButton = document.querySelector('#submit-button')
-
 const list = ['encode', 'madlib', 'translate', 'search']
+const explain = document.querySelector('#explanation')
+const ul = document.querySelector('ul')
 
-submitButton.addEventListener('click', ()=>{
+explain.addEventListener('click', ()=>{
+    if(explain.innerText ==='Show explanation'){
+        ul.classList=''
+        explain.innerText = 'Hide explanation'
+    } else if (explain.innerText ==='Hide explanation'){
+        ul.classList.add('invisible')
+        explain.innerText = 'Show explanation'
+    }
+})
+
+inputBox.addEventListener('keyup', ()=>{
     let radioValue;
     for (const rad of radio){
         if(rad.checked){
